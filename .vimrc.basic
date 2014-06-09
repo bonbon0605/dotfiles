@@ -1,0 +1,20 @@
+"基本設定
+
+" SSH クライアントの設定によってはマウスが使える（putty だと最初からいける）
+set mouse=n
+
+" タブの表示
+set showtabline=2
+
+" 改行関連の設定
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+" 検索の設定
+set ignorecase
+set hlsearch
+
+" カーソルのハイライト
+set cursorcolumn
+set cursorline

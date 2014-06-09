@@ -1,0 +1,45 @@
+""""""""""""""""""""""""""""""""""""""""""""
+" キーマッピング
+""""""""""""""""""""""""""""""""""""""""""""
+" nnoremap : ノーマルモードでのキーマッピング
+" 再帰的な割り当てをしたい場合にはnmap
+nnoremap <Space>. :<C-u>edit $MYVIMRC<Enter>
+nnoremap tn :<C-u>tabnext<Enter>
+nnoremap tp :<C-u>tabprevious<Enter>
+
+"unite
+nnoremap <space>uf :Unite file<Enter>     
+nnoremap <space>un :Unite file/new<Enter>
+nnoremap <space>ub :Unite buffer<Enter>
+nnoremap <space>ur :Unite file_mru<Enter>
+nnoremap <space>us :Unite vcs_grep<Enter>
+
+"unite-rails
+nnoremap [rails] <Nop>
+nmap     <Space>r [rails]
+nnoremap [rails]r :Unite rails/
+nnoremap [rails]c :Unite rails/controller<Enter>
+nnoremap [rails]v :Unite rails/view<Enter>
+nnoremap [rails]m :Unite rails/model<Enter>
+nnoremap [rails]h :Unite rails/helper<Enter>
+nnoremap [rails]s :Unite rails/spec<Enter>
+
+"git
+nnoremap [git] <Nop>
+nmap     <Space>g [git]
+nnoremap [git]s :Gstatus<Enter>
+nnoremap [git]a :Gwrite<Enter>
+nnoremap [git]c :Gcommit -v<Enter>
+nnoremap [git]d :Gdiff<Enter>
+nnoremap [git]v :Gitv<Enter>
+nnoremap [git]b :Gblame<Enter>
+
+"移動のちょっとした工夫
+noremap  j gj
+noremap  k gk
+noremap gj  j
+noremap gk  k
+
+" .vimrcの編集、リロード
+nnoremap <Space>.  :<C-u>edit $MYVIMRC<Enter>
+nnoremap <Space>s. :<C-u>source $MYVIMRC<Enter>  
