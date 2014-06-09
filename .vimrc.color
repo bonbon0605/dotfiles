@@ -1,0 +1,7 @@
+" indent_guides用にカラースキームを設定
+colorscheme molokai
+
+" 奇数インデントのカラー
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=#262626 ctermbg=blue
+" 偶数インデントのカラー
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=yellow
