@@ -1,4 +1,4 @@
-"vundle.vimで管理してるpluginを読み込む
+"NeoBundleで管理してるpluginを読み込む
 
 filetype off
 
@@ -20,15 +20,26 @@ NeoBundle 'git://github.com/kien/ctrlp.vim.git'
 " 統合ユーザーインターフェース
 " 参考：http://qiita.com/hide/items/77b9c1b0f29577d60397
 NeoBundle 'Shougo/unite.vim'
+" uniteで履歴が見れる
+NeoBundle 'Shougo/neomru.vim'
+" unite-rails
+" Railsで便利なunite
 NeoBundle 'basyura/unite-rails'
+" vim-fugitive
+" vim上でGitの操作が可能に。blameとかも出来る
 NeoBundle 'tpope/vim-fugitive'
+" NERDtree
+" エクスプローラ的にファイルを見るのに便利
+NeoBundle 'git://github.com/scrooloose/nerdtree.git'
+" 用途不明
+NeoBundle 'git://github.com/scrooloose/syntastic.git'
+" インデントを色付けしてみやすくする
+NeoBundle 'git://github.com/nathanaelkane/vim-indent-guides'
+" Rubyでendを自動挿入する
+NeoBundle 'git://github.com/tpope/vim-endwise'
+
 " NeoBundle 'Shougo/neocomplete'
 " NeoBundle 'Shougo/neosnippet'
-NeoBundle 'git://github.com/scrooloose/nerdtree.git'
-NeoBundle 'git://github.com/scrooloose/syntastic.git'
-NeoBundle 'git://github.com/nathanaelkane/vim-indent-guides'
-NeoBundle 'git://github.com/tpope/vim-endwise'
-NeoBundle 'Shougo/neomru.vim'
 
 filetype plugin on
 filetype indent on
